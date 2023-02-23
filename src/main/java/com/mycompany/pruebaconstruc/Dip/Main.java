@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author USUARIO
  */
-public class Main {
+public class main {
    
     public static void main(String[] args) {
         // Creamos un calculador de deducción y un calculador de IVA
