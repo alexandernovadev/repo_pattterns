@@ -10,8 +10,8 @@ package com.mycompany.pruebaconstruc.SRP;
  */
 public class Facturador {
 
-    private CalculadoraDeduccion calculadoraDeduccion;
-    private CalculadoraIva calculadoraIVA;
+    CalculadoraDeduccion calculadoraDeduccion;
+    CalculadoraIva calculadoraIVA;
 
     public Facturador() {
         this.calculadoraDeduccion = new CalculadoraDeduccion();

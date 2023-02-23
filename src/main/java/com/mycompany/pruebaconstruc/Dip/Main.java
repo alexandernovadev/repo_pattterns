@@ -39,3 +39,6 @@ public class main {
 }
 
 
+//1.El código no cumple con el principio de Inversión de Dependencia ya que la clase Factura tiene una dependencia directa con las clases Deduccion e Iva, lo que significa que cualquier cambio en estas clases afectará a la clase Factura. Además, la clase Factura está creando instancias de estas clases dentro del método calcularTotal(), lo que aumenta el acoplamiento entre estas clases.
+
+//2.Para cumplir con el principio de Inversión de Dependencia, podríamos utilizar una interfaz para abstraer la funcionalidad de cálculo de deducción y de IVA, y luego inyectar estas dependencias en la clase Factura a través del constructor o un método set. Esto permite que la clase Factura dependa de una abstracción en lugar de una implementación concreta, lo que hace que sea más fácil cambiar la implementación en el futuro sin afectar a la clase Factura. Por ejemplo:
