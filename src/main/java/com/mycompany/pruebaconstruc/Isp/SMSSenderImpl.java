@@ -1,4 +1,4 @@
-package Isp;
+package com.mycompany.pruebaconstruc.Isp;
 
 public class SMSSenderImpl implements SMSSender {
   @Override

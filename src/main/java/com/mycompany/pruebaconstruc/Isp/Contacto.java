@@ -1,4 +1,4 @@
-package Isp;
+package com.mycompany.pruebaconstruc.Isp;
 
 public class Contacto implements EmailSender, SMSSender {
   String name, address, emailAddress, telephone;

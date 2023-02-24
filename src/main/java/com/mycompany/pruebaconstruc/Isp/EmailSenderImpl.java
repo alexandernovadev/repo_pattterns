@@ -1,4 +1,4 @@
-package Isp;
+package com.mycompany.pruebaconstruc.Isp;
 
 public class EmailSenderImpl implements EmailSender {
   @Override
