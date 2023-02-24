@@ -1,7 +1,17 @@
 package Isp;
 
-public class Contacto {
+public class Contacto implements EmailSender, SMSSender {
   String name, address, emailAddress, telephone;
+
+  @Override
+  public void sendEmail(String emailAddress, String message) {
+    // Código para enviar correo electrónico
+  }
+
+  @Override
+  public void sendSMS(String telephone, String message) {
+    // Código para enviar SMS
+  }
 
   public void setName(String n) {
     name = n;
