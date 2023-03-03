@@ -4,7 +4,6 @@
  */
 package com.mycompany.pruebaconstruc;
 
-
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -13,19 +12,29 @@ import java.util.Vector;
  * @author USUARIO
  */
 public class Figuras {
-    Vector<FiguraDibujable> figuras = new Vector<FiguraDibujable>();
+    Vector<Cuadrado> cuadrados = new Vector<Cuadrado>();
+    Vector<Circulo> circulos = new Vector<Circulo>();
 
-
-public void addFigura(FiguraDibujable figura) {
-    figuras.add(figura);
-}
-
-public void dibujarFiguras() {
-    Enumeration<FiguraDibujable> figs = figuras.elements();
-    FiguraDibujable figura;
-    while (figs.hasMoreElements()) {
-        figura = figs.nextElement();
-        figura.dibujar();
+    public void addCirculo(Circulo c) {
+        circulos.add(c);
     }
-}
+
+    public void addCuadrado(Cuadrado c) {
+        cuadrados.add(c);
+    }
+
+    public void dibujarFiguras() {
+        Enumeration<Cuadrado> cuads = cuadrados.elements();
+        Cuadrado c;
+        while (cuads.hasMoreElements()) {
+            c = cuads.nextElement();
+            c.dibujar();
+        }
+        Enumeration<Circulo> circs = circulos.elements();
+        Circulo ci;
+        while (cuads.hasMoreElements()) {
+            ci = circs.nextElement();
+            ci.dibujar();
+        }
+    }
 }
